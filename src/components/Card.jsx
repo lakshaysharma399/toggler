@@ -1,11 +1,16 @@
+import { useContext } from 'react';
 import './Card.css';
-function Card({ count }) {
+import { Context } from './Context';
+function Card() {
+
+     const {dark} = useContext(Context)
 
     return (
+       
 
         <>
 
-            <div className={`card ${count ? "dark" : "light"}`}>
+            <div className={`card ${dark ? "dark" : "light"}`}>
 
                 <div>
                     <p>Lakshay</p>

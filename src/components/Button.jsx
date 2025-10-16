@@ -1,12 +1,14 @@
+import { useContext } from "react";
+import { Context } from "./Context";
 
 
 
 
-function Button({count, setCount}) {
+function Button() {
 
-    function toggle(){
-        setCount(!count);
-    }
+  const {toggle} =  useContext(Context);
+
+  
 
     return (
 
